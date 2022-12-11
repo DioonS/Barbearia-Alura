@@ -1,0 +1,266 @@
+* {
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+}
+
+html {
+    scroll-behavior: smooth;
+}
+
+body {
+    font-family: 'Montserrat', sans-serif;
+}
+
+header {
+    background: #bbbbbb;
+    padding: 20px 0;
+}
+
+::-webkit-scrollbar {
+    width: 10px;
+}
+
+::-webkit-scrollbar-track {
+    background: #999999;
+    border-radius: 30px;
+}
+
+::-webkit-scrollbar-thumb {
+    background: #000000;
+    border-radius: 30px;
+}
+
+.input-padrao {
+    display: block;
+    margin: 0 0 20px;
+    padding: 10px 15px;
+    width: 50%;
+    border-radius: 5px;
+    border: none;
+}
+
+.logo {
+    cursor: initial;
+}
+
+.caixa {
+    width: 940px;
+    position: relative;
+    margin: 0 auto;
+}
+
+nav {
+    position: absolute;
+    top: 110px;
+    right: 0;
+}
+
+nav li{
+    display: inline;
+    margin: 0 0 0 15px;
+}
+
+nav a {
+    text-transform: uppercase;
+    color: #000000;
+    text-decoration: none;
+    font-weight: bold;
+    font-size: 22px;
+}
+
+nav a:hover {
+    text-decoration: underline;
+    color: #c78c19;
+    font-size: 1.5em;
+    transition: 2s ease-in-out;
+}
+
+hr {
+    width: 100%;
+    height: .2rem;
+    background: #000000;
+    border: none;
+}
+
+footer {
+    text-align: center;
+    background: url(/images/bg.jpg);
+    padding: 40px 0;
+}
+
+footer a {
+    text-decoration: none;
+    color: #ffffff;
+}
+
+/*CSS da página inicial*/
+.banner {
+    width: 100%;
+}
+
+.titulo-principal {
+    text-align: center;
+    font-size: 2em;
+    margin: 0 0 1em;
+    clear: left;
+    font-weight: initial;
+}
+
+.titulo-principal:first-letter {
+    font-weight: bold;
+}
+
+.principal {
+    padding: 3em 0;
+    background: #ffffff;
+    width: 940px;
+    margin: 0 auto;
+}
+
+.principal p{
+    margin: 0 0 1em;
+}
+
+.principal strong {
+    font-weight: bold;
+}
+
+.principal em {
+    font-style: italic;
+}
+
+.utensilios {
+    float: left;
+    width: 140px;
+    margin: 0 20px 20px 0;
+    border-radius: 5px;
+}
+
+.mapa {
+    padding: 3em 0;
+    background: linear-gradient(#ffffff, #888888);
+}
+
+.mapa-conteudo {
+    width: 940px;
+    margin: 0 auto;
+}
+
+.mapa p {
+    margin: 0 0 2em;
+    text-align: center;
+}
+
+.mapa iframe {
+    border-radius: 5px;
+    box-shadow: 20px 20px 50px #000000;
+}
+
+.beneficios {
+    padding: 3em 0;
+    background: #888888;
+}
+
+.conteudo-beneficios {
+    width: 640px;
+    margin: 0 auto;
+    list-style: none;
+}
+
+.lista-beneficios {
+    width: 40%;
+    display: inline-block;
+    vertical-align: top;
+}
+
+.itens {
+    line-height: 1.5;
+    list-style: none;
+}
+
+.itens:first-child {
+    font-weight: bold;
+}
+
+.itens::before {
+	content: "🟊 ";
+}
+
+.itens:hover {
+    font-size: 1.1em;
+    transition: 1s ease-in-out;
+}
+
+.imagem-beneficios {
+    width: 60%;
+    opacity: 1;
+    transition: 400ms;
+    border-radius: 5px;
+    box-shadow: 10px 10px 50px #000000;
+}
+
+.imagem-beneficios:hover {
+    opacity: 0.8;
+}
+
+.video {
+    width: 560px;
+    margin: 2em auto;
+    box-shadow: 20px 20px 50px #000000;
+}
+
+.video iframe {
+    border-radius: 5px;
+}
+
+.copyright {
+    font-size: 13px;
+    color: #ffffff;
+    margin: 20px 0 0;
+}
+
+@media screen and (max-width: 480px) {
+    .caixa, .principal, .conteudo-beneficios, .mapa-conteudo, .video{
+        width: auto;
+    }
+    h1 {
+        text-align: center;
+    }
+    nav {
+        position: static;
+    }
+    .lista-beneficios, .imagem-beneficios {
+        width: 100%;
+    }
+}
+
+#link-topo {
+    position: fixed;
+    right: 3rem;
+    bottom: 3rem;
+    width: 3rem;
+    height: 3rem;
+    background: #999999;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    color: #fff;
+    border-radius: 100%;
+    box-shadow: 5px 5px 30px 0 rgba(51, 51, 51, 40%);
+    text-decoration: none;
+    animation: bounce-bottom 2s ease-in-out infinite alternate-reverse;
+}
+
+@keyframes bounce-bottom {
+    to {
+        transform: translateY(10px);
+        animation-timing-function: ease-in;
+        opacity: 1;
+    }
+    from {
+        transform: translateY(0px);
+        animation-timing-function: ease-out;
+        opacity: 1;
+    }
+}

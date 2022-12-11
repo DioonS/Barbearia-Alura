@@ -1,0 +1,104 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="/styles/contato.css">
+    <link rel="shortcut icon" href="images/logo.png" type="image/x-icon">
+    </script>
+    <script src="https://kit.fontawesome.com/ee7e969a6e.js" crossorigin="anonymous">
+    </script>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Montserrat:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap" rel="stylesheet">
+    <title>Contato - Barbearia Alura</title>
+</head>
+<body>
+    <header>
+        <div class="caixa">
+            <h1><a href="https://www.alura.com.br/" target="_blank" class="logo"><img src="images/logo.png" alt="Logo Barbearia Alura"></a></h1>
+            <nav>
+                <ul>
+                    <li><a href="index.html">Home</a></li>
+                    <li><a href="produtos.html">Produtos</a></li>
+                    <li><a href="#">Contato</a></li>
+                </ul>
+            </nav>
+        </div>
+    </header>
+
+    <hr>
+
+    <main>
+        
+        <form action="">
+            <label for="nomesobrenome" class="titulo-principal">Nome e Sobrenome</label>
+            <input type="text" id="nomesobrenome" class="input-padrao" required placeholder="Paulo Silveira">
+
+            <label for="email" class="titulo-principal">E-mail</label>
+            <input type="email" id="email" class="input-padrao" required placeholder="seuemail@mail.com.br">
+
+            <label for="telefone" class="titulo-principal">Telefone</label>
+            <input type="tel" id="telefone" class="input-padrao" required placeholder="(xx) xxxx-xxxx">
+
+            <label for="mensagem" class="titulo-principal">Mensagem</label>
+            <textarea name="mensagem" class="input-padrao" cols="60" rows="10" required></textarea>
+
+            <fieldset>
+                <legend class="titulo-principal">Como prefere nosso contato ?</legend>
+                <label for="radio-email"><input type="radio" name="contato" value="email" id="radio-email"> E-mail</label>
+
+                <label for="radio-telefone"><input type="radio" name="contato" value="telefone" id="radio-telefone"> Telefone</label>
+
+                <label for="radio-whatsapp"><input type="radio" name="contato" value="whatsapp" id="radio-whatsapp" checked> WhatsApp</label>
+            </fieldset>
+
+            <fieldset>
+                <legend class="titulo-principal">Qual horário prefere ser atendido?</legend>
+                <select name="" id="">
+                    <option value="">Manhã</option>
+                    <option value="">Tarde</option>
+                    <option value="">Noite</option>
+                </select>
+            </fieldset>
+
+            <label><input type="checkbox" class="checkbox" checked> Gostaria de receber nossas novidades por e-mail ?</label>
+
+            <input type="submit" value="Enviar formulário" class="enviar">
+        </form>
+
+        <table>
+            <thead>
+                <tr>
+                    <th>Dia</th>
+                    <th>Horário</th>
+                </tr>
+            </thead>
+            <tbody>
+                <tr>
+                    <td>Segunda</td>
+                    <td>8h - 20h</td>
+                </tr>
+                <tr>
+                    <td>Quarta</td>
+                    <td>8h - 20h</td>
+                </tr>
+                <tr>
+                    <td>Sexta</td>
+                    <td>8h - 20h</td>
+                </tr>
+            </tbody>
+        </table>
+    </main>
+
+    <footer>
+        <a href="https://www.alura.com.br/" target="_blank"><img src="images/logo-branco.png" alt="Logo Rodapé"></a>
+        <p class="copyright">&copy; Copyright Barbearia <a href="https://www.alura.com.br/" target="_blank">Alura</a> - 2022</p>
+    </footer>
+
+    <a href="#" id="link-topo">
+        <i class="fas fa-arrow-up"></i>
+    </a>
+</body>
+</html>
